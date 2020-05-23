@@ -1,2 +1,2 @@
 # gcp-firewall-update
-adds a rule to the GCP firewall to allow access from Japanese IPs.
+This script adds a rule to the GCP firewall rules that only allows access from Japan.
