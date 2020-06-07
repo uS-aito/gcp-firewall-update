@@ -3,8 +3,8 @@ import subprocess
 
 IPLIST_URL = "https://ipv4.fetus.jp/jp.txt"
 FIREWALL_RULE_CREATE_COMMAND = "gcloud compute firewall-rules create {name} --allow={target_protocol} --source-ranges={range} --target-tags={target_tag}"
-FIREWALL_NAME_PREFIX = "k8s-fw-"
-TARGET_PROTOCOL = "TCP:8888"
+FIREWALL_NAME_PREFIX = "k8s-fw-allow-3443-"
+TARGET_PROTOCOL = "TCP:3443"
 TARGET_TAG = "gke-qlc-cluster-54ac5eeb-node"
 dryrun = False
 
